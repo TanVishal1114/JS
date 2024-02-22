@@ -51,9 +51,11 @@ let newUserEmail=user_email
 newUserEmail="newuser@gmail.com"
 console.log(user_email);
 
-let user={
+let userOne={
     email:"test@gmail.com",
     age:22
 }
-user.email="test1@gmail.com";
-console.log(user.email);
+let userTwo=userOne;
+userTwo.email="test1@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
