@@ -42,3 +42,18 @@ console.log("Object",typeof myObj);
 console.log("Function",typeof myFunction);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//++++++++++++++++++++++++++++++++++++++++++
+//stack(primitive) and heap(Non primitive)
+
+let user_email="user@google.com"
+let newUserEmail=user_email
+newUserEmail="newuser@gmail.com"
+console.log(user_email);
+
+let user={
+    email:"test@gmail.com",
+    age:22
+}
+user.email="test1@gmail.com";
+console.log(user.email);
