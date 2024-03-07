@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function language(langname)
+    {
+        const li=document.createElement('li');
+        li.innerText=`${langname}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    language("PHP")
+    language("C#")
+    function addOptiLanguage(langname)
+    {
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langname));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage("PHP1")
+    addOptiLanguage("C#1")
+    //Edit Element
+    const secondLang=document.querySelector('li:nth-child(2)');
+    //only innerHtml will change
+    //secondLang.innerHTML="Mojo"
+    // Create new element then replece with exixting
+    const newLi=document.createElement('li');
+    newLi.innerHTML="Ruby"
+    secondLang.replaceWith(newLi);
+
+    //Edit outer HTML
+    const firstLang=document.querySelector('li:first-child');
+    firstLang.outerHTML='<li>TypeScript</li>'
+    //remove Element
+    const lastLang=document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</html>
