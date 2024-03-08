@@ -188,9 +188,8 @@ function newGame() {
 # Project 5 solution
 
 ```javascript
-const insert = document.getElementById('insert');
-
-window.addEventListener('keydown', (e) => {
+console.log('Project 5');
+window.addEventListener('keydown', function (e) {
   insert.innerHTML = `
     <div class='color'>
     <table>
@@ -209,7 +208,6 @@ window.addEventListener('keydown', (e) => {
     </div>
   `;
 });
-
 
 ```
 
